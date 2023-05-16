@@ -25,7 +25,7 @@ For baseline:
 python train.py -d [CIFAR10/CIFAR100/Food101] -m [resnet50/resnet18/WideResNet-40-2/WideResNet-28-10] -mm -bl -lr 0.1 -bs [100/128] -we [5/10] -lrs cosine -s
 ```
 
-For Ours: 
+For Ours (-b is used to choose the coefficients of our proposed regularization): 
 
 ```python
 python train.py -d [CIFAR10/CIFAR100/Food101] -m [resnet50/resnet18/WideResNet-40-2/WideResNet-28-10] -mm -lr 0.1 -bs [100/128] -we [5/10] -lrs cosine -s -b 0.5
