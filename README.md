@@ -71,7 +71,7 @@ python train.py -d lt-CIFAR10 -m resnet18 -mm -b 0.5 -lr 0.1 -bs 100 -we 5 -lrs 
 
 ### OOD Scenario Experiment
 
-The scripts in this folder provides PyTorch implementation of OOD scenario experiment in our paper. Before training, one should move datasets in `./datasets` or just modify the value of `dataset_dir` in `datasets.py`.
+The scripts in "OOD Scenario Experiment" provide PyTorch implementation of OOD scenario experiment in our paper. Before training, one should move datasets in `OOD Scenario Experiment/datasets` or just modify the value of `dataset_dir` in `datasets.py`.
 
 To start a experiment of ERM algorithm:
 
@@ -93,9 +93,4 @@ python train.py -d dataset -o optimizer -e train_epochs\
                 -seed seed -lns log_name_suffix
 ```
 
-
-
-## References & Opensources
-
-- **Wide-ResNet** : [paper](https://arxiv.org/pdf/1605.07146), [code](https://github.com/meliketoy/wide-resnet.pytorch)
 
